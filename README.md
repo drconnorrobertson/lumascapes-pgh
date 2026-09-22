@@ -10,7 +10,7 @@ Original static website for Lumascapes, a Pittsburgh-area landscape lighting bra
 - `about.html` — brand story
 - `contact.html` — call, text, Instagram, and a text-preparation form
 
-Open `index.html` locally or publish this directory with GitHub Pages. No build step or dependencies are required.
+Open `index.html` locally or visit the [live GitHub Pages site](https://drconnorrobertson.github.io/lumascapes-pgh/). No build step or dependencies are required.
 
 ## Important content notes
 
@@ -21,7 +21,7 @@ Open `index.html` locally or publish this directory with GitHub Pages. No build 
 
 ## Publishing
 
-In GitHub, enable Pages for the repository's `main` branch and `/ (root)` folder. Add a custom domain in Pages settings if one is available.
+GitHub Pages is enabled from the repository's `main` branch and `/ (root)` folder. Add a custom domain in Pages settings if one is available.
 
 ## Image prompts and provenance
 
