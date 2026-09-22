@@ -6,6 +6,7 @@ A complete static website for Lumascapes, a Pittsburgh-area landscape lighting b
 - Repository: https://github.com/drconnorrobertson/lumascapes-pgh
 - Sitemap: https://drconnorrobertson.github.io/lumascapes-pgh/sitemap.xml
 - Google Search Console: URL-prefix property verified September 21, 2026; sitemap submitted, with initial fetch status pending recheck. Keep the verification meta tag in the generated homepage.
+- IndexNow: all 171 sitemap URLs submitted September 21, 2026 through the global endpoint. It returned HTTP 202 (accepted; key validation pending). Keep the public key file in the repository root for ongoing verification.
 
 ## What's included
 

@@ -51,4 +51,4 @@ The next actions need access to the real business and evidence:
 
 ## One-week priority
 
-The site is live, verified in Search Console, and submitted for indexing. The fastest useful next work is Business Profile verification, checking the sitemap fetch status, real project photographs, and the first authentic reviews. A #1 ranking within a week cannot be promised or forced by publishing 171 pages; Google may take time to crawl and evaluate them, and local map ranking is influenced by proximity and prominence.
+The site is live, verified in Search Console, and submitted for indexing. All 171 URLs were also sent to IndexNow; its API returned HTTP 202, meaning the submission was received and key validation is pending. IndexNow covers participating engines and does not replace Google Search Console. The fastest useful next work is Business Profile verification, checking the sitemap fetch status, real project photographs, and the first authentic reviews. A #1 ranking within a week cannot be promised or forced by publishing 171 pages; Google may take time to crawl and evaluate them, and local map ranking is influenced by proximity and prominence.
