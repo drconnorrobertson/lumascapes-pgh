@@ -44,11 +44,11 @@ The next actions need access to the real business and evidence:
 2. Verify and complete the Google Business Profile. Add the website URL, correct categories/services, authentic photos, and regular useful updates.
 3. Replace concept photography with permissioned before/after and completed-job photos, ideally tied to real services and actual towns served.
 4. Ask real customers for reviews through normal business practices, then respond to them. Do not create or buy reviews.
-5. Add the site as a URL-prefix property in Google Search Console and submit `https://drconnorrobertson.github.io/lumascapes-pgh/sitemap.xml`. Use URL Inspection on the home page and priority service pages to request indexing. Google decides whether and when URLs are indexed.
+5. The GitHub Pages URL-prefix property was verified in Google Search Console on September 21, 2026 with an HTML tag. The 171-URL sitemap was submitted, and indexing was requested for the home page, services overview, and architectural lighting page. Google decides whether and when URLs are indexed. The first sitemap status said “Couldn’t fetch” even though the published XML returned HTTP 200 to a Googlebot user agent and parsed locally. Recheck Search Console after processing; resubmit or investigate if the status persists.
 6. Connect a business-owned domain, update canonical URLs, and keep name/address/phone information consistent wherever it appears.
 7. Earn relevant local links: suppliers, legitimate local directories, chambers, design partners, builders, landscape architects, and actual featured projects. Links should be editorial and relevant.
 8. Review Search Console queries and indexing monthly. Improve pages using real customer questions, installation detail, and project evidence. Merge or remove pages that do not provide distinct value.
 
 ## One-week priority
 
-The site can be live and submitted for indexing immediately. The fastest useful next work is Business Profile verification, Search Console submission, real project photographs, and the first authentic reviews. A #1 ranking within a week cannot be promised or forced by publishing 171 pages; Google may take time to crawl and evaluate them, and local map ranking is influenced by proximity and prominence.
+The site is live, verified in Search Console, and submitted for indexing. The fastest useful next work is Business Profile verification, checking the sitemap fetch status, real project photographs, and the first authentic reviews. A #1 ranking within a week cannot be promised or forced by publishing 171 pages; Google may take time to crawl and evaluate them, and local map ranking is influenced by proximity and prominence.
