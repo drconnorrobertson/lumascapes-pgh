@@ -22,3 +22,19 @@
 @media(max-width:700px){.image-ribbon{grid-template-columns:1fr 1fr}.image-ribbon img{height:170px}.content-section,.guide-preview{padding:76px 0}.feature-cards,.service-tiles,.guide-preview-grid,.editorial-split,.gallery-intro,.article-layout,.guide-index{grid-template-columns:1fr}.feature-card img{aspect-ratio:1.6}.mosaic{gap:6px}.mosaic img,.mosaic img:nth-child(2){height:200px;transform:none}.editorial-split img,.guide-preview img{height:350px}.editorial-split img{order:-1}.bullet-columns,.proof-strip{grid-template-columns:1fr}.proof-strip{gap:20px;margin-top:45px}.service-tile{min-height:420px}.article-layout{padding:75px 0;gap:45px}.article-aside{position:static}.mini-gallery{grid-template-columns:1fr 1fr}.mini-gallery img{height:180px}.mini-gallery img:last-child{display:none}.gallery-page-grid{grid-template-columns:1fr}.gallery-page-item:nth-child(3n+2){margin-top:0}.footer-top{grid-template-columns:1fr 1fr}}
 .gallery-page-link{display:block}.gallery-page-link .gallery-page-item img{transition:transform .5s,filter .5s}.gallery-page-link:hover .gallery-page-item img{transform:scale(1.02);filter:brightness(1.09)}.gallery-page-link:hover h2{color:var(--gold2)}
 @media(max-width:1180px){.nav{gap:19px}.nav a{font-size:10px}.header-cta{display:none}}
+
+/* Visual refinement 2026-10: preserve the existing brand, layout and content. */
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+h1, h2, h3 { text-wrap: balance; }
+p, blockquote { text-wrap: pretty; }
+:where(a, button, input, select, textarea):focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+:where(article, .content, .article-content) a { text-underline-offset: .2em; text-decoration-thickness: 1px; }
+:where(.hero-grid, .features-grid, .cards-grid, .grid, .footer-grid) > * { min-width: 0; }
+@media (max-width: 600px) { input, select, textarea { font-size: 16px; } :where(.hero-cta, .hero-actions, .cta-actions) { flex-wrap: wrap; row-gap: 12px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; transition-duration: .01ms !important; } }
+
+.feature-card { box-shadow: 0 1px 2px rgba(15,23,42,.035), 0 10px 30px rgba(15,23,42,.055); }
+
+.btn, .btn-fill { transition: background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+
+h1, h2 { letter-spacing: -.02em; } .hero p { line-height: 1.75; }
