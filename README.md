@@ -2,9 +2,9 @@
 
 A complete static website for Lumascapes, a Pittsburgh-area landscape lighting brand.
 
-- Live site: https://drconnorrobertson.github.io/lumascapes-pgh/
+- Live site: https://www.lumascapespittsburgh.com/
 - Repository: https://github.com/drconnorrobertson/lumascapes-pgh
-- Sitemap: https://drconnorrobertson.github.io/lumascapes-pgh/sitemap.xml
+- Sitemap: https://www.lumascapespittsburgh.com/sitemap.xml
 - Google Search Console: URL-prefix property verified September 21, 2026; sitemap submitted, with initial fetch status pending recheck. Keep the verification meta tag in the generated homepage.
 - IndexNow: all 171 sitemap URLs submitted September 21, 2026 through the global endpoint. It returned HTTP 202 (accepted; key validation pending). Keep the public key file in the repository root for ongoing verification.
 
@@ -19,7 +19,7 @@ A complete static website for Lumascapes, a Pittsburgh-area landscape lighting b
 
 From this repository directory, run `npm run build` to regenerate HTML, sitemap, and robots.txt from the source in `scripts/`. Run `npm run check` to verify internal links, images, title uniqueness, metadata, and headings. No packages need to be installed.
 
-GitHub Pages serves the `main` branch from the repository root. A custom domain can be set in the repository's Pages settings when available. Until then, canonical URLs point to the GitHub Pages address above. Update `baseUrl` in `scripts/build.mjs` before rebuilding after a domain change.
+GitHub Pages serves the `main` branch from the repository root. A custom domain can be set in the repository's Pages settings when available. The production canonical origin is `https://www.lumascapespittsburgh.com/`, set in `scripts/build.mjs`. Vercel rebuilds the generated pages and sitemap from that source. The September Search Console and IndexNow submissions above refer to the historical GitHub Pages property; verify and submit the production-domain property separately.
 
 ## Business details to verify
 
@@ -34,3 +34,4 @@ All 36 images were made with the built-in image generation tool, then optimized 
 ## Search work
 
 Read [SEO-STRATEGY.md](SEO-STRATEGY.md) for the competitor assessment, intent architecture, what has been implemented, and the steps that require access to the business's Google profile and Search Console.
+
