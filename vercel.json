@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build && node scripts/prepare-vercel.mjs",
+  "buildCommand": "npm run build && node scripts/prepare-vercel.mjs && node scripts/optimize-media.mjs public",
   "outputDirectory": "public",
   "framework": null
 }
