@@ -52,3 +52,19 @@ The next actions need access to the real business and evidence:
 ## One-week priority
 
 The site is live, verified in Search Console, and submitted for indexing. All 171 URLs were also sent to IndexNow; its API returned HTTP 202, meaning the submission was received and key validation is pending. IndexNow covers participating engines and does not replace Google Search Console. The fastest useful next work is Business Profile verification, checking the sitemap fetch status, real project photographs, and the first authentic reviews. A #1 ranking within a week cannot be promised or forced by publishing 171 pages; Google may take time to crawl and evaluate them, and local map ranking is influenced by proximity and prominence.
+
+## Website-only long-tail improvements, October 2026
+
+Implemented in the source generator, preserving existing URLs:
+
+- All 104 topic guides now pair their specific topic with Pittsburgh in the title and primary heading, use a topic-first introduction, and link to relevant services and buying resources.
+- Ten service pages use explicit service-and-city primary headings and differentiated descriptions.
+- The homepage explains landscape lighting design, installation, and service in Pittsburgh above the fold.
+- Six substantive buyer guides cover installation cost factors, quote comparison, repair symptoms, LED retrofits, professional versus DIY choices, and design consultations. No invented prices, warranties, completed jobs, or geographic availability claims were added.
+- A project planning hub links the guides. Home, services, journal, cornerstone guide, and footer make this content discoverable.
+- Every non-home page has breadcrumb structured data. The sitemap includes 178 content pages. Verification files remain intact and outside the content sitemap.
+- Page hero background images now reference the existing assets/images directory.
+
+The target phrases are intent-based editorial choices, not measured search-volume claims. No ranking guarantee is made. Town-specific pages require verified service coverage and substantive local material before publication. Existing concept imagery remains labeled as illustration.
+
+Validation: generator and production build; unique titles, one H1 and canonical per content page; internal links and image files; parsed JSON-LD; sitemap membership; incoming links for every content page. The checker excludes only exact Google verification-file contents and resolves root-relative paths against the site root.
