@@ -113,8 +113,12 @@ for(const g of buyerGuides) {
 }
 for(const slug of ['index.html','services.html','journal.html','pittsburgh-landscape-lighting-guide.html']) pages[slug].body=pages[slug].body.replace(cta,planningSection+cta);
 
+const handover = JSON.parse(fs.readFileSync(path.join(root,'scripts/ownership-handover.json'),'utf8'));
+pages['lighting-system-ownership-handover.html']=handover;
+pages['journal.html'].body += '<section class="container content-section"><h2>Lighting system ownership</h2><p><a href="lighting-system-ownership-handover.html">Prepare a lighting-system ownership handover</a></p></section>';
+
 for (const [name,data] of Object.entries(pages)) fs.writeFileSync(path.join(root,name),page({...data,slug:name}));
-fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc></url>`).join('')}</urlset>`);
+fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${name==='lighting-system-ownership-handover.html'?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${baseUrl}sitemap.xml\n`);
 
 
