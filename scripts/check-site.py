@@ -19,6 +19,7 @@ class P(HTMLParser):
   if tag=='title':self._title=False
 errors=[];titles=[];pages=list(root.glob('*.html'))
 for file in pages:
+ if file.name.startswith('google') and file.read_text().strip().startswith('google-site-verification:'):continue
  p=P();p.feed(file.read_text());titles+=[' '.join(p.titles)]
  if p.h1!=1:errors.append((file.name,'h1',p.h1))
  if len(p.canon)!=1 or len(p.meta)!=1:errors.append((file.name,'metadata',len(p.canon),len(p.meta)))
@@ -26,7 +27,7 @@ for file in pages:
   if not item or item.startswith(('http:','https:','tel:','sms:','mailto:','#')):continue
   path=urlsplit(item).path
   if path in ('','.'):continue
-  dest=(root/path).resolve()
+  dest=(root/path.lstrip('/')).resolve()
   if not dest.exists():errors.append((file.name,'broken',item))
 for title,n in Counter(titles).items():
  if n>1:errors.append(('duplicate title',title,n))

@@ -1,0 +1,181 @@
+{
+  "origin": "https://www.lumascapespittsburgh.com",
+  "brand": "Lumascapes",
+  "color": "#344e41",
+  "clean": false,
+  "parents": [
+    "index.html",
+    "journal.html",
+    "services.html"
+  ],
+  "cta": "/contact.html",
+  "ctaText": "Discuss your Pittsburgh lighting project",
+  "related": [
+    [
+      "/pittsburgh-landscape-lighting-guide.html",
+      "Pittsburgh lighting guide"
+    ],
+    [
+      "/landscape-lighting-service-pittsburgh.html",
+      "Lighting service and maintenance"
+    ],
+    [
+      "/gallery.html",
+      "Lighting design concepts"
+    ]
+  ],
+  "pages": [
+    {
+      "slug": "landscape-lighting-quotes-pittsburgh-checklist",
+      "title": "9 Checks for Pittsburgh Landscape Lighting Quotes",
+      "description": "Compare Pittsburgh landscape lighting proposals by design intent, fixture specifications, installation, nighttime aiming, controls and service scope.",
+      "intro": "Landscape lighting quotes are difficult to compare when one lists fixtures and another describes a finished nighttime scene. Start with the routes and views you want to improve. Then ask each provider to explain how its proposal addresses those same priorities on your Pittsburgh-area property.",
+      "items": [
+        [
+          "Agree on the project areas",
+          "Mark the entry route, steps, patio and focal points included in each proposal. Identify areas reserved for a future phase. A smaller quote may cover fewer views, so compare the plan boundary before judging the price or the fixture count."
+        ],
+        [
+          "Request a design explanation",
+          "Ask what each group of fixtures is intended to accomplish and where the light will stop. Discuss the view from the street, your windows and neighboring property. More brightness is not a substitute for a plan that makes the intended route or feature legible."
+        ],
+        [
+          "Identify actual fixtures",
+          "Request manufacturer and model information, finish, light-source details and the proposed accessories. Ask what can be serviced or replaced later. Generic descriptions such as premium brass do not tell you which product is included or whether a replacement will match the original installation."
+        ],
+        [
+          "Clarify installation conditions",
+          "Describe slopes, planting beds, retaining walls, established roots and hardscape crossings during the walkthrough. Ask which restoration work is included. A quote based only on photographs should identify the site assumptions that could change after the installer inspects the property."
+        ],
+        [
+          "Compare controls and operating periods",
+          "Ask how the system will switch on and off, who sets the schedule and how the homeowner changes it. Discuss whether separate areas need separate operating periods. The control arrangement should fit actual evening use rather than leaving every feature illuminated all night."
+        ],
+        [
+          "Include nighttime aiming",
+          "Ask whether the scope includes reviewing the installed effect after dark and adjusting the aiming or shielding. Daytime placement alone does not show glare from a driver's seat or light entering a bedroom window. Define how a concern found during that review will be resolved."
+        ],
+        [
+          "Separate product and labor coverage",
+          "Request written warranty terms and the person responsible for claims. Ask whether a product replacement also includes diagnostic visits, labor and shipping. A manufacturer's product warranty and the installer's service commitment can cover different parts of the same issue."
+        ],
+        [
+          "Plan for growing plants",
+          "Ask how fixtures can be accessed, cleaned and adjusted as the garden changes. Identify areas likely to need seasonal attention. The initial design should leave a practical maintenance route rather than placing a serviceable part where it becomes difficult to reach."
+        ],
+        [
+          "Get an installed-system record",
+          "Request fixture locations, product identifiers, control instructions and a contact for service. Record the agreed nighttime adjustments before closing the punch list. These details make later expansion and maintenance easier even if you eventually hire a different service provider."
+        ]
+      ],
+      "example": "Illustrative comparison: one proposal covers only the front facade, while another includes the walk, two grade changes and a patio control zone. Ask for aligned alternatives covering the same areas. A fixture-per-dollar comparison would miss the different installation work and the functions served by those lights.",
+      "action": "Take daytime photographs and note where you walk, sit and look after sunset. Send the same marked plan to each bidder. Keep a comparison record of scope, product details, installation assumptions, nighttime review and service exclusions before accepting a proposal.",
+      "faq": [
+        [
+          "Can I compare quotes by fixture count?",
+          "Fixture count is one input. Beam control, placement, installation conditions and the intended effect also matter, so compare the whole written scope."
+        ],
+        [
+          "Should every light stay on all night?",
+          "Discuss a schedule matched to the purpose of each area. Useful lighting can be controlled so that it operates when needed."
+        ]
+      ]
+    },
+    {
+      "slug": "solar-vs-wired-low-voltage-landscape-lighting",
+      "title": "Solar vs Wired Low-Voltage Landscape Lighting",
+      "description": "Compare solar and wired low-voltage garden lights for wooded yards, evening use, placement flexibility, controls, maintenance and project scope.",
+      "intro": "Solar fixtures and wired low-voltage systems suit different situations. Compare the job the light must perform, the conditions at its location and the maintenance you can support. A decorative accent in a sunny bed and a regularly used stepped route need different evaluation criteria.",
+      "items": [
+        [
+          "Start with the required operating period",
+          "Write down when the area is used and what people need to see. For a solar product, check its documented operating assumptions and the charging conditions at your exact location. Do not infer dependable evening duration from a photograph or a general description of the product category."
+        ],
+        [
+          "Assess shade where the panel will sit",
+          "Watch the proposed location through the day and across relevant seasons. Trees, rooflines and nearby structures may affect charging opportunities. A wooded Pittsburgh garden can contain both exposed and shaded spots; evaluate the actual panel location instead of assigning one verdict to the entire property."
+        ],
+        [
+          "Compare placement freedom",
+          "A standalone solar fixture can be convenient where you want to test a decorative location without a cable run. A wired plan requires an installation route but can place light according to the design rather than solely according to panel exposure. Confirm the specific product and site requirements."
+        ],
+        [
+          "Review controls and coordination",
+          "Ask how each product is controlled and whether multiple fixtures will behave consistently. For a wired system, discuss grouping and scheduling with the installer. For independent fixtures, check the actual settings rather than assuming they will turn on and dim together."
+        ],
+        [
+          "Test the effect after dark",
+          "Compare visibility from the walking route and glare from seated positions. Bright dots along a path do not necessarily illuminate the surface people need to see. Trial products can help you judge the effect, but an informal test does not establish compliance with any applicable site requirement."
+        ],
+        [
+          "Compare maintenance tasks",
+          "Read the instructions for batteries, panels, light sources and cleaning. For wired systems, retain fixture and control records and ask who services the installation. Compare access to replacement parts for the exact products; neither category eliminates maintenance or guarantees an unlimited service life."
+        ],
+        [
+          "Choose a scope you can maintain",
+          "A mixed approach may be reasonable when decorative accents are separate from the permanent lighting plan. Keep the visual result coherent and assign responsibility for each system. Ask a qualified installer to evaluate technical installation questions rather than improvising electrical connections."
+        ]
+      ],
+      "example": "Illustrative scenario: a homeowner wants movable accents in a sunny garden and a coordinated scene along a shaded entry. Testing a solar accent in the garden does not establish that the same product will suit the entry. Compare the two areas separately and review the arrival route after dark before choosing its system.",
+      "action": "For each area, record purpose, hours of use, shade, intended fixture position and maintenance access. Compare exact product documentation and a site-specific installation proposal against that brief. Keep decorative experimentation separate from unresolved route or electrical questions.",
+      "faq": [
+        [
+          "Are solar lights always unsuitable for Pittsburgh?",
+          "No. Suitability depends on the particular product, charging conditions and intended task. Evaluate the location and required use rather than making a citywide claim."
+        ],
+        [
+          "Does low voltage mean installation needs no planning?",
+          "No. Cable routes, power supply, product compatibility, existing site conditions and any applicable requirements still need a proper assessment."
+        ]
+      ]
+    },
+    {
+      "slug": "repair-vs-replace-existing-landscape-lighting",
+      "title": "Repair vs Replace Existing Landscape Lighting",
+      "description": "Decide whether to repair, selectively upgrade or replace an outdoor lighting system using condition, serviceability, controls and nighttime design evidence.",
+      "intro": "An older landscape lighting system does not need wholesale replacement simply because a few fixtures have stopped working. Start with a documented inspection and a nighttime review. The right scope could be a repair, a selective upgrade or a new plan, depending on what is failing and whether the current design still suits the property.",
+      "items": [
+        [
+          "Record symptoms without guessing the cause",
+          "Note which lights are dark, intermittent, misaligned or blocked by plants. Photograph the controls and visible product labels without opening electrical equipment. A symptom list helps a service provider investigate; it is not evidence that the transformer, wiring or every fixture requires replacement."
+        ],
+        [
+          "Locate the existing records",
+          "Gather invoices, product identifiers, installation drawings and prior service notes. Ask the provider to distinguish known information from assumptions. A lack of documentation may increase investigation work, but it does not by itself establish that the system cannot be repaired."
+        ],
+        [
+          "Assess the nighttime design separately",
+          "A functioning system may still direct light into windows or miss a route changed by new landscaping. Walk the property and identify the effects you want to keep. This separates technical repairs from design improvements and avoids treating a new aesthetic preference as a component failure."
+        ],
+        [
+          "Ask about compatible replacement parts",
+          "Request exact replacement options and any effect on appearance, controls or the rest of the system. A similar-looking fixture is not proof of compatibility. Ask the qualified service provider to document the proposed change and the reason a particular component should be retained or removed."
+        ],
+        [
+          "Compare three written scopes",
+          "Request a minimum repair, a selective improvement and a broader replacement where each is technically reasonable. Identify what remains unresolved in each option. Compare serviceability and the nighttime result alongside the price rather than assuming the newest or largest scope is automatically best."
+        ],
+        [
+          "Plan the changeover",
+          "Discuss whether work can be phased while preserving a usable arrival route. Identify old equipment that will be removed and any surface or planting restoration included. Keep the operating instructions current so the homeowner is not left using settings for a system that has changed."
+        ],
+        [
+          "Close with a verified result",
+          "Review the repaired or replaced system after dark and resolve aiming concerns. Obtain updated product details, control settings and service contacts. Record remaining limitations clearly so a narrow repair is not mistaken for a promise that every part of an older installation has been renewed."
+        ]
+      ],
+      "example": "Illustrative scenario: several path fixtures are obscured by mature planting, one is physically damaged and the facade lighting still works well. The useful starting scope is an inspection plus a design review of the route. The provider may propose adjustment and a compatible replacement before discussing a whole-property redesign.",
+      "action": "Send the service provider your symptom list, available records and desired changes. Ask the proposal to label repair work, optional design improvements and exclusions separately. After the work, retain the revised inventory and the agreed operating schedule in one place.",
+      "faq": [
+        [
+          "Can someone service another installer's system?",
+          "Ask the provider whether it will inspect the existing products and what information it needs. Service availability and compatibility depend on the actual installation."
+        ],
+        [
+          "Should I troubleshoot wiring myself?",
+          "Use observations and accessible records to describe the issue. Have a qualified provider handle electrical diagnosis and installation questions."
+        ]
+      ]
+    }
+  ]
+}
