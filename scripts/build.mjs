@@ -105,3 +105,6 @@ for (const [name,data] of Object.entries(pages)) fs.writeFileSync(path.join(root
 fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc></url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${baseUrl}sitemap.xml\n`);
 
+
+const {execFileSync}=await import('node:child_process');
+execFileSync(process.execPath,['scripts/decision-guides.cjs'],{stdio:'inherit'});
