@@ -19,8 +19,9 @@ class P(HTMLParser):
   if tag=='title':self._title=False
 errors=[];titles=[];pages=list(root.glob('*.html'))
 for file in pages:
- if file.name.startswith('google') and file.read_text().strip().startswith('google-site-verification:'):continue
- p=P();p.feed(file.read_text());titles+=[' '.join(p.titles)]
+ text=file.read_text()
+ if text.strip()==f'google-site-verification: {file.name}':continue
+ p=P();p.feed(text);titles+=[' '.join(p.titles)]
  if p.h1!=1:errors.append((file.name,'h1',p.h1))
  if len(p.canon)!=1 or len(p.meta)!=1:errors.append((file.name,'metadata',len(p.canon),len(p.meta)))
  for item in p.hrefs+p.images:
