@@ -117,8 +117,14 @@ const handover = JSON.parse(fs.readFileSync(path.join(root,'scripts/ownership-ha
 pages['lighting-system-ownership-handover.html']=handover;
 pages['journal.html'].body += '<section class="container content-section"><h2>Lighting system ownership</h2><p><a href="lighting-system-ownership-handover.html">Prepare a lighting-system ownership handover</a></p></section>';
 
+const walkthrough=JSON.parse(fs.readFileSync(path.join(root,'scripts/nighttime-walkthrough.json'),'utf8'));
+const walkthroughPage=pages[walkthrough.route];
+if(!walkthroughPage || !/<article class="rich-copy">[\s\S]*?<\/article>/.test(walkthroughPage.body)) throw new Error('Missing walkthrough source article');
+walkthroughPage.body=walkthroughPage.body.replace(/<article class="rich-copy">[\s\S]*?<\/article>/,()=>walkthrough.articleHtml);
+walkthroughPage.description=walkthrough.description;
+
 for (const [name,data] of Object.entries(pages)) fs.writeFileSync(path.join(root,name),page({...data,slug:name}));
-fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${name==='lighting-system-ownership-handover.html'?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
+fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${baseUrl}sitemap.xml\n`);
 
 
