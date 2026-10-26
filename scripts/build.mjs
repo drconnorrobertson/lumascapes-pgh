@@ -132,8 +132,16 @@ photoPage.body=photoPage.body.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/,(_,attrs)=>'<h
 photoPage.title=consultationPhotos.title;
 photoPage.description=consultationPhotos.description;
 
+const colorOutput=JSON.parse(fs.readFileSync(path.join(root,'scripts/color-output-guide.json'),'utf8'));
+const colorPage=pages[colorOutput.route];
+if(!colorPage || !/<article class="rich-copy">[\s\S]*?<\/article>/.test(colorPage.body)) throw new Error('Missing color output source article');
+colorPage.body=colorPage.body.replace(/<article class="rich-copy">[\s\S]*?<\/article>/,()=>colorOutput.articleHtml);
+colorPage.body=colorPage.body.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/,(_,attrs)=>'<h1'+attrs+'>'+colorOutput.title+'</h1>');
+colorPage.title=colorOutput.title;
+colorPage.description=colorOutput.description;
+
 for (const [name,data] of Object.entries(pages)) fs.writeFileSync(path.join(root,name),page({...data,slug:name}));
-fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${name===consultationPhotos.route?'<lastmod>2026-10-26</lastmod>':(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
+fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${(name===consultationPhotos.route||name===colorOutput.route)?'<lastmod>2026-10-26</lastmod>':(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${baseUrl}sitemap.xml\n`);
 
 
