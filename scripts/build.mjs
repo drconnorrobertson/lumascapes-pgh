@@ -123,8 +123,17 @@ if(!walkthroughPage || !/<article class="rich-copy">[\s\S]*?<\/article>/.test(wa
 walkthroughPage.body=walkthroughPage.body.replace(/<article class="rich-copy">[\s\S]*?<\/article>/,()=>walkthrough.articleHtml);
 walkthroughPage.description=walkthrough.description;
 
+const consultationPhotos=JSON.parse(fs.readFileSync(path.join(root,'scripts/consultation-photos.json'),'utf8'));
+const photoPage=pages[consultationPhotos.route];
+if(!photoPage || !/<article class="rich-copy">[\s\S]*?<\/article>/.test(photoPage.body)) throw new Error('Missing consultation photo source article');
+photoPage.body=photoPage.body.replace(/<article class="rich-copy">[\s\S]*?<\/article>/,()=>consultationPhotos.articleHtml);
+const photoTitle=consultationPhotos.title.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+photoPage.body=photoPage.body.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/,(_,attrs)=>'<h1'+attrs+'>'+photoTitle+'</h1>');
+photoPage.title=consultationPhotos.title;
+photoPage.description=consultationPhotos.description;
+
 for (const [name,data] of Object.entries(pages)) fs.writeFileSync(path.join(root,name),page({...data,slug:name}));
-fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
+fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${name===consultationPhotos.route?'<lastmod>2026-10-26</lastmod>':(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${baseUrl}sitemap.xml\n`);
 
 
