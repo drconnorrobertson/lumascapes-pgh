@@ -140,8 +140,12 @@ colorPage.body=colorPage.body.replace(/<h1([^>]*)>[\s\S]*?<\/h1>/,(_,attrs)=>'<h
 colorPage.title=colorOutput.title;
 colorPage.description=colorOutput.description;
 
+const illuminanceGuide=JSON.parse(fs.readFileSync(path.join(root,'scripts/illuminance-guide.json'),'utf8'));
+pages[illuminanceGuide.route]=illuminanceGuide;
+pages['journal-lighting-design-principles.html'].body += '<section class="container content-section"><h2>Read a numerical lighting table</h2><p><a href="'+illuminanceGuide.route+'">'+illuminanceGuide.title+'</a></p></section>';
+
 for (const [name,data] of Object.entries(pages)) fs.writeFileSync(path.join(root,name),page({...data,slug:name}));
-fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${(name===consultationPhotos.route||name===colorOutput.route)?'<lastmod>2026-10-26</lastmod>':(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
+fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).map(name=>`<url><loc>${baseUrl}${name==='index.html'?'':name}</loc>${(name===consultationPhotos.route||name===colorOutput.route||name===illuminanceGuide.route)?'<lastmod>2026-10-26</lastmod>':(name==='lighting-system-ownership-handover.html'||name===walkthrough.route)?'<lastmod>2026-10-25</lastmod>':''}</url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${baseUrl}sitemap.xml\n`);
 
 
