@@ -1,0 +1,7 @@
+fictional_concept,area,fixture_count,coverage_note
+A,Entry route,6,Proposed in fictional concept; performance untested
+A,Two trees,2,Proposed in fictional concept; performance untested
+A,Patio,0,Omitted
+B,Entry route,4,Proposed in fictional concept; performance untested
+B,Two trees,2,Proposed in fictional concept; performance untested
+B,Patio,2,Included; performance untested
